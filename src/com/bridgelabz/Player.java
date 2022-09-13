@@ -1,14 +1,11 @@
 package com.bridgelabz;
 
+import java.util.Arrays;
+
 public class Player {
+
     private String playerName;
-
-    public Player() {
-    }
-
-    public Player(String playerName) {
-        this.playerName = playerName;
-    }
+    private Card[] playerCards = new Card[9];
 
     public String getPlayerName() {
         return playerName;
@@ -18,10 +15,19 @@ public class Player {
         this.playerName = playerName;
     }
 
+    public Card[] getPlayerCards() {
+        return playerCards;
+    }
+
+    public void setPlayerCards(Card[] playerCards) {
+        this.playerCards = playerCards;
+    }
+
     @Override
     public String toString() {
         return "Player{" +
                 "playerName='" + playerName + '\'' +
+                ", playerCards=" + Arrays.toString(playerCards) +
                 '}';
     }
 }

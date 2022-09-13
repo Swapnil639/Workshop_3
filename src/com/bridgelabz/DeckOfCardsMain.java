@@ -5,5 +5,6 @@ public class DeckOfCardsMain {
         DeckOfCards deckOfCards = new DeckOfCards();
         deckOfCards.initializeCards();
         deckOfCards.addPlayers();
+        deckOfCards.changeSequence();
     }
 }

@@ -7,6 +7,7 @@ public class Card {
 
     private String suit;
     private String rank;
+    private int numberOfCard = suits.length * ranks.length;
 
     public Card() {
     }
@@ -32,6 +33,14 @@ public class Card {
         this.rank = rank;
     }
 
+    public int getNumberOfCard() {
+        return numberOfCard;
+    }
+
+    public void setNumberOfCard(int numberOfCard) {
+        this.numberOfCard = numberOfCard;
+    }
+
     @Override
     public String toString() {
         return "Card{" +
@@ -40,5 +49,3 @@ public class Card {
                 '}';
     }
 }
-
-
